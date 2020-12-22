@@ -34,7 +34,7 @@ important: **remember to think about how your loops will terminate**
 ## 1.3. For loop
 
 ``` python
-for i in range(5)
+for i in range(5):
     print('Jimmy Five Times ('+ str(i) + ')')
 ```
 

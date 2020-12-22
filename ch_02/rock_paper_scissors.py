@@ -34,7 +34,7 @@ while True:  # The main game loop.
     elif randomNumber == 2:
         computerMove = 'p'
         print('PAPER')
-    elif randomNumber == 3:
+    else:
         computerMove = 's'
         print('SCISSORS')
 
