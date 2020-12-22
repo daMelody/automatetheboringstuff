@@ -10,8 +10,9 @@
   - [1.5. Chef Boyardee (Slicing Lists)](#15-chef-boyardee-slicing-lists)
   - [1.6. The `len()` function](#16-the-len-function)
   - [1.7. Mutating Values in a List](#17-mutating-values-in-a-list)
-  - [Concatenating & Replicating Lists](#concatenating--replicating-lists)
-  - [Removing Values from Lists](#removing-values-from-lists)
+  - [1.8. Concatenating & Replicating Lists](#18-concatenating--replicating-lists)
+  - [1.9. Removing Values from Lists](#19-removing-values-from-lists)
+  - [1.10. Iterating over Lists](#110-iterating-over-lists)
 
 ``` python
 list_one = [1,2,3]
@@ -72,7 +73,7 @@ listy = [1,2,3]
 listy[index] = new_value
 ```
 
-## Concatenating & Replicating Lists
+## 1.8. Concatenating & Replicating Lists
 
 Python allows one to add lists to each other, as well as easily create a repeated list
 
@@ -84,6 +85,27 @@ listy + ['A','B','C']
 listy # => [1,2,3,'A','B','C']
 ```
 
-## Removing Values from Lists
+## 1.9. Removing Values from Lists
 
 Use the `del` keyword
+
+``` python
+spam = ['first','second','third']
+del spam[1] # => ['first', 'third']
+```
+
+## 1.10. Iterating over Lists
+
+This is where the `len()` function is particularly useful.
+
+``` python
+listy = ['apples','bananas','cantaloupes']
+
+for i in range(len(listy)):
+    print('index: ' + str(i) + ' is ' + listy[i])
+
+# should return:
+# index: 0 is apples
+# index: 1 is bananas
+# index: 2 is cantaloupes
+```
